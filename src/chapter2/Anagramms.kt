@@ -9,10 +9,12 @@ fun main() {
 }
 
 fun isAnagram(s1: String, s2: String): Boolean {
-    val s1Chars = s1.toLowerCase().toList()
-    val s2Chars = s2.toLowerCase().toList()
-    for (ch in s1Chars) {
-        if (ch !in s2Chars) return false
+    val s1Chars = s1.toLowerCase().toList().filter { it !=' ' }
+    val s2Chars = s2.toLowerCase().toList().filter { it !=' ' }
+    for (ch in s2Chars) {
+        if (ch !in s1Chars) return false
     }
     return true
 }
+
+//заигнорить пробелы между словами
