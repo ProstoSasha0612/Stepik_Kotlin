@@ -1,10 +1,10 @@
 package chapter2
 
 fun main() {
-//    val input = readLine() ?: "Nothing"
-//    val inputList = input.split(" ").sorted()
-    val inputList = listOf("Smith","Jones","Bambury","Patel","Brown","Singh","Williams","Taylor","Wilson","Davies",
-        "Evans","Scott").sorted()
+    val input = readLine() ?: "Nothing"
+    val inputList = input.split(" ").sorted()
+//    val inputList = listOf("Smith","Jones","Bambury","Patel","Brown","Singh","Williams","Taylor","Wilson","Davies",
+//        "Evans","Scott").sorted()
     val res = sortLists(inputList)
 
     for(i in res){ //красивенький вывод
