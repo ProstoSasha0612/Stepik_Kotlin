@@ -1,11 +1,15 @@
 package chapter4
 
-import chapter3.MyDate
+import java.util.*
+import kotlin.Comparator
 
-class DateRange(val start:MyDate,val endInclusive:MyDate){
-    //TODO()
-}
-
-fun checkInRange(date:MyDate,first:MyDate,last:MyDate){
-    return date in DateRange(first,last)
+//first way
+fun getList(): List<Int> {
+    val arrayList = arrayListOf(1, 5, 2)
+    Collections.sort(arrayList, object : Comparator<Int> {
+        override fun compare(o1: Int, o2: Int): Int {
+            return o2.compareTo(o1)
+        }
+    })
+    return arrayList
 }
