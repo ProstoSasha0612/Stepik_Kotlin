@@ -1,6 +1,6 @@
 package chapter3
 
-/* TODO */class MyDate(val year: Int, val month: Int, val dayOfMonth: Int){
+class MyDate(val year: Int, val month: Int, val dayOfMonth: Int){
     operator fun component1():Int{
         return year
     }
